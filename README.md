@@ -1,3 +1,4 @@
+
 # Wayfarer — Vehicle Rental Marketplace
 
 Wayfarer is a vehicle rental marketplace MVP that connects vehicle owners with people looking to rent. Renters can browse listings, send date-based rental requests, and message a lister after a request is accepted. Listers can publish vehicles, review requests, and manage confirmed trips.
@@ -87,3 +88,6 @@ The SQL Editor runs with elevated database permissions. SQL checks confirm datab
 ## Contact
 
 Project support: [support.wayfarrer@gmail.com](mailto:support.wayfarrer@gmail.com)
+# way-farrer
+Vehicle rental marketplace MVP built with HTML, CSS, JavaScript, and Supabase.
+ 
