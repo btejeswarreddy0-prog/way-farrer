@@ -1,0 +1,15 @@
+# Unrelated nested project in the workspace
+/sevapali/
+
+# Local tooling and generated dependencies
+/.vercel/
+/node_modules/
+
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+
+# Windows metadata
+Thumbs.db
+Desktop.ini

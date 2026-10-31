@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5f4ef">
+  <title>Create account — Wayfarer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--paper:#f5f4ef;--white:#fffefa;--ink:#18231d;--muted:#747a72;--green:#183d31;--line:#e3e4dc;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--paper);color:var(--ink);font-family:var(--sans)}a{color:inherit}.topbar{height:78px;padding:0 clamp(22px,6.8vw,104px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(24,35,29,.08)}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-family:var(--serif);font-size:23px;font-weight:700;letter-spacing:-.7px}.brand-mark{width:30px;height:30px;background:var(--green);border-radius:50%;display:grid;place-items:center;color:var(--paper)}.brand-mark svg{width:18px}.back{font-size:13px;font-weight:600;text-decoration:none;color:#657068;transition:color .2s}.back:hover{color:var(--green)}main{min-height:calc(100vh - 146px);display:grid;place-items:center;padding:42px 22px}.panel{width:min(100%,530px);background:var(--white);border:1px solid #e6e5dc;border-radius:16px;padding:clamp(27px,5vw,46px);box-shadow:0 18px 55px rgba(28,43,33,.07)}.role-chip{display:inline-flex;align-items:center;gap:8px;border-radius:100px;padding:8px 12px;background:#eaf1e9;color:#254d3e;font-size:10px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase}.role-chip:before{content:'';width:7px;height:7px;background:#5c8069;border-radius:50%}.role-chip[data-role="lister"]{background:#f2e9de;color:#65452f}.role-chip[data-role="lister"]:before{background:#a87753}.panel h1{font-family:var(--serif);font-weight:500;font-size:clamp(35px,7vw,44px);letter-spacing:-1.2px;line-height:1.1;margin:19px 0 8px}.subhead{font-size:14px;color:var(--muted);line-height:1.6;margin:0 0 25px}.field{margin:0 0 16px}.field label{display:block;font-size:12px;font-weight:700;margin:0 0 7px}.field input{width:100%;height:47px;border:1px solid #dcded5;border-radius:7px;background:#fffefa;padding:0 14px;font:14px var(--sans);color:var(--ink);outline:none;transition:border-color .2s,box-shadow .2s}.field input::placeholder{color:#a0a39b}.field input:focus{border-color:#64816d;box-shadow:0 0 0 3px rgba(49,93,73,.12)}.password-wrap{position:relative}.password-wrap input{padding-right:64px}.show-password{position:absolute;right:11px;top:50%;transform:translateY(-50%);border:0;background:none;color:#667268;font:600 11px var(--sans);cursor:pointer;padding:7px}.hint{font-size:10px;color:#8b9088;margin:-8px 0 16px}.submit{width:100%;height:49px;display:flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:7px;background:var(--green);color:#fff;font:700 13px var(--sans);letter-spacing:.2px;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}.submit:hover{background:#244f3e;transform:translateY(-1px);box-shadow:0 8px 18px rgba(24,61,49,.18)}.submit svg{width:16px}.status{min-height:20px;text-align:center;font-size:12px;color:#6d756d;line-height:1.5;margin:11px 0 0}.status.error{color:#a43f34}.status.success{color:var(--green)}.signin-note{text-align:center;font-size:12px;color:#7b817a;margin:21px 0 0}.signin-note a{color:var(--green);font-weight:700;text-decoration:none}.signin-note a:hover{text-decoration:underline}.footer{border-top:1px solid rgba(24,35,29,.08);padding:18px 22px;text-align:center;color:#858a82;font-size:10px}.footer strong{color:#606b62;font-weight:600}@media(max-width:520px){.topbar{height:68px}.topbar .brand{font-size:21px}.back{font-size:11px}main{min-height:calc(100vh - 126px);padding:28px 16px}.panel{padding:26px 21px;border-radius:13px}.subhead{font-size:13px;margin-bottom:22px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;scroll-behavior:auto!important;animation:none!important}}
+  @keyframes auth-reveal { from { opacity:0; transform:translateY(20px) scale(.99); } to { opacity:1; transform:translateY(0) scale(1); } }
+@keyframes auth-glow { 0%,100% { transform:translate3d(0,0,0); opacity:.45; } 50% { transform:translate3d(10px,-12px,0); opacity:.8; } }
+body { position:relative; isolation:isolate; overflow-x:hidden; background-image:radial-gradient(ellipse at 10% 14%,rgba(227,235,223,.65),transparent 31%),radial-gradient(ellipse at 94% 84%,rgba(239,229,214,.55),transparent 29%); }
+body:before { content:""; position:fixed; z-index:-1; top:12vh; right:8vw; width:230px; height:230px; border:1px solid rgba(49,93,73,.08); border-radius:50%; box-shadow:0 0 0 28px rgba(49,93,73,.025),0 0 0 58px rgba(49,93,73,.018); animation:auth-glow 9s ease-in-out infinite; pointer-events:none; }
+.topbar { position:relative; z-index:1; backdrop-filter:blur(12px); background:rgba(245,244,239,.72); }
+.panel { position:relative; overflow:hidden; animation:auth-reveal .72s cubic-bezier(.2,.75,.25,1) both; box-shadow:0 24px 65px rgba(28,43,33,.08); transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease; }
+.panel:before { content:""; position:absolute; top:0; left:0; width:100%; height:3px; background:linear-gradient(90deg,#183d31,#b7c99c 54%,#b28a56); transform:scaleX(.35); transform-origin:left; transition:transform .55s cubic-bezier(.2,.8,.2,1); }
+.panel:focus-within:before { transform:scaleX(1); }
+.panel h1 { text-wrap:balance; }
+.role-chip { transition:transform .25s ease,box-shadow .25s ease; }
+.panel:hover .role-chip { transform:translateY(-1px); box-shadow:0 5px 12px rgba(24,61,49,.06); }
+.field { animation:auth-reveal .55s cubic-bezier(.2,.75,.25,1) both; }
+.field:nth-of-type(2) { animation-delay:.05s; }.field:nth-of-type(3) { animation-delay:.1s; }.field:nth-of-type(4) { animation-delay:.15s; }
+.field input { transition:border-color .2s,box-shadow .2s,background .2s,transform .2s; }
+.field input:focus { transform:translateY(-1px); background:#fff; }
+.submit { position:relative; overflow:hidden; box-shadow:0 8px 18px rgba(24,61,49,.13); }
+.submit:hover { transform:translateY(-2px); box-shadow:0 13px 25px rgba(24,61,49,.2); }
+.submit svg { transition:transform .25s ease; }.submit:hover svg { transform:translateX(3px); }
+.footer { background:rgba(255,254,250,.24); backdrop-filter:blur(8px); }
+@media(prefers-reduced-motion:reduce) { *,*:before,*:after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; scroll-behavior:auto!important; } }
+</style>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="index.html" aria-label="Wayfarer home"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 17.5 10.2 6l3.4 7.2L16 8l3 9.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.4"/></svg></span>wayfarer</a><a class="back" href="index.html">← Change role</a></header>
+  <main><section class="panel" aria-labelledby="title"><span class="role-chip" id="role-chip" data-role="renter">Renter account</span><h1 id="title">Create your account.</h1><p class="subhead">A few details, then you’re ready for the road ahead.</p>
+    <form id="register-form" novalidate>
+      <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" placeholder="Your full name" autocomplete="name" required minlength="2"></div>
+      <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
+      <div class="field"><label for="mobile">Mobile number</label><input id="mobile" name="mobile" type="tel" placeholder="Include your country code" autocomplete="tel" required></div>
+      <div class="field"><label for="password">Create password</label><div class="password-wrap"><input id="password" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" required minlength="8"><button class="show-password" type="button" data-target="password" aria-label="Show password" aria-pressed="false">Show</button></div></div>
+      <div class="field"><label for="confirm-password">Confirm password</label><div class="password-wrap"><input id="confirm-password" name="confirm-password" type="password" placeholder="Enter your password again" autocomplete="new-password" required minlength="8"><button class="show-password" type="button" data-target="confirm-password" aria-label="Show password confirmation" aria-pressed="false">Show</button></div></div>
+      <p class="hint">Use at least 8 characters for your password.</p>
+      <button class="submit" type="submit">Create account <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.5 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <p class="status" id="status" aria-live="polite"></p>
+    </form>
+    <p class="signin-note">Already have an account? <a id="signin-link" href="login.html">Sign in</a></p>
+  </section></main><footer class="footer">© 2026 <strong>Wayfarer</strong>. Made for the road ahead.</footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-client.js"></script>
+  <script src="register.js"></script>
+</body>
+</html>
+
+
