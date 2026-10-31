@@ -1,5 +1,6 @@
 
 # Wayfarer — Vehicle Rental Marketplace
+Live demo: way-farrer.vercel.app
 
 Wayfarer is a vehicle rental marketplace MVP that connects vehicle owners with people looking to rent. Renters can browse listings, send date-based rental requests, and message a lister after a request is accepted. Listers can publish vehicles, review requests, and manage confirmed trips.
 
